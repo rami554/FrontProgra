@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "FrontFinal"
+    }
+  },
+  "defaultProject": "FrontFinal",
+  "cli": {
+    "analytics": "0279f545-bd79-471b-b647-0aff06bd5a5c"
+  }
 }

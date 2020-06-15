@@ -1,16 +1,37 @@
 <form>
     <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <label for="Titulo">Titulo de la Obra</label>
+      <input type="text" class="form-control" id="Titulo">
     </div>
     <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <label for="Estilo">Estilo de la Obra</label>
+      <input type="text" class="form-control" id="Estilo">
     </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <div class="form-group">
+      <label for="Precio">Precio de la Obra</label>
+      <input type="number" class="form-control" id="Precio">
     </div>
-    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Seleccione el Propietario</label>
+      </div>
+      <select class="custom-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Seleccione el Artista</label>
+      </div>
+      <select class="custom-select" id="inputGroupSelect01">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>      
+    <button type="submit" class="btn btn-primary btn-block">Adicionar</button>
   </form>

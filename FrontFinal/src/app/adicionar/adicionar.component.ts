@@ -10,15 +10,27 @@ import { Obra } from '../models/Obra';
 })
 export class AdicionarComponent implements OnInit {
 
+  obra: Obra = {
+    idObra: null,
+    titulo: null,
+    estilo: null,
+    precio: null,
+    idPropietario: null,
+    idArtista: null,
+  }
+
   constructor(private router: Router, private service: ServiceService) { }
 
   ngOnInit(): void {
   }
 
-  Guardar(obra: Obra){
-    this.service.createObras(obra).subscribe(data => {
-      alert('Se agrego con Exito!!!');
-      this.router.navigate(['listar']);
+  Guardar(){
+    this.service.createObras(this.obra).subscribe((data) => {
+      alert('Obra Registrada');
+      console.log(data);
+    }, (error) => {
+      console.log(error);
+      alert('algo salio mal');
     });
   }
 }

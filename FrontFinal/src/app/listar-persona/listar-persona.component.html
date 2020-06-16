@@ -1,1 +1,25 @@
-<p>listar-persona works!</p>
+<hr>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Celular</th>
+        <th scope="col">Pais</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Profesion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of personas">
+        <td>{{persona.idpersona}}</td>
+        <td>{{persona.nombre}}</td>
+        <td>{{persona.apellido}}</td>
+        <td>{{persona.celular}}</td>
+        <td>{{persona.pais}}</td>
+        <td>{{persona.ciudad}}</td>
+        <td>{{persona.profesion}}</td>
+      </tr>
+    </tbody>
+  </table>

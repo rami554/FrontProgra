@@ -18,7 +18,9 @@ const routes: Route[] = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'adicionar', component: AdicionarComponent},
-  {path: 'listar', component: ListarComponent}
+  {path: 'listar', component: ListarComponent},
+  {path: 'listar-persona', component: ListarPersonaComponent}
+  
 ]
 @NgModule({
   declarations: [

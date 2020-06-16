@@ -11,23 +11,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
+      <tr *ngFor="let obra of obras">
+        <td>{{obra.idObra}}</td>
+        <td>{{obra.titulo}}</td>
+        <td>{{obra.estilo}}</td>
+        <td>{{obra.precio}}</td>
+        <td>{{obra.idPropietario}}</td>
+        <td>{{obra.idArtista}}</td>
       </tr>
     </tbody>
   </table>

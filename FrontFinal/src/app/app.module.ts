@@ -7,6 +7,10 @@ import { Route, RouterModule } from '@angular/router';
 import { ListarComponent } from './listar/listar.component';
 import { AdicionarComponent } from './adicionar/adicionar.component';
 
+import { FormsModule } from '@angular/forms';
+import { ServiceService } from '../app/service/service.service';
+import { HttpClientModule } from '@angular/common/http';
+
 const routes: Route[] = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
@@ -22,9 +26,11 @@ const routes: Route[] = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

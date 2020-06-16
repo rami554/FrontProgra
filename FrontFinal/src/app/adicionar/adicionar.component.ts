@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ServiceService } from '../service/service.service';
+import { Obra } from '../models/Obra';
 
 @Component({
   selector: 'app-adicionar',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdicionarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private service: ServiceService) { }
 
   ngOnInit(): void {
   }
 
+  Guardar(obra: Obra){
+    this.service.createObras(obra).subscribe(data => {
+      alert('Se agrego con Exito!!!');
+      this.router.navigate(['listar']);
+    });
+  }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ServiceService } from '../service/service.service';
 import { Obra } from '../models/Obra';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-edit',
@@ -29,7 +30,7 @@ export class EditComponent implements OnInit {
     this.service.updateObra(obra)
     .subscribe(data =>{
       this.obra = data;
-      alert('Se actulaizo si si');
+      swal("Exito", "Obra Actualizada","success");
       this.router.navigate(['listar']);
     })
   }

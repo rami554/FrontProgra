@@ -12,7 +12,7 @@ export class ServiceService {
 
   constructor(private http: HttpClient) { }
 
-  Url = 'http://localhost:8080/';
+  Url = 'http://localhost:8081/';
 
   getObras(){
     return this.http.get<Obra[]>(this.Url + 'Obra');

@@ -24,4 +24,12 @@ export class ListarComponent implements OnInit {
     this.router.navigate(['edit']);
   }
 
+  Borrar(obra: Obra){
+    this.service.deleteObra(obra)
+    .subscribe(data => {
+      this.obras = this.obras.filter(p => p !== obra);
+      alert('Obra Eliminada');
+    });
+  }
+
 }

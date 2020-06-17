@@ -35,4 +35,9 @@ export class ServiceService {
     const header = new HttpHeaders().set('Content-Type', 'application/json');
     return this.http.put<Obra>(this.Url + 'Obra/' + obra.idObra, json, {headers: header});
   }
+
+  deleteObra(obra: Obra): Observable<any>{
+    const header = new HttpHeaders().set('Content-Type', 'application/json');
+    return this.http.delete<Obra>(this.Url + 'Obra/' + obra.idObra, {headers: header});
+  }
 }

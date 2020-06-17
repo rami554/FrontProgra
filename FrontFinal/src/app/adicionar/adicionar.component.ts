@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ServiceService } from '../service/service.service';
 import { Obra } from '../models/Obra';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-adicionar',
@@ -26,11 +27,11 @@ export class AdicionarComponent implements OnInit {
 
   Guardar(){
     this.service.createObras(this.obra).subscribe((data) => {
-      alert('Obra Registrada');
-      this.router.navigate(['home']);
+      swal("Exito!", "Obra Registrada!","success");
+      console.log(data);
     }, (error) => {
       console.log(error);
-      alert('algo salio mal');
+      swal("Oh Oh!", "Obra NO Registrada!","error");
     });
   }
 }

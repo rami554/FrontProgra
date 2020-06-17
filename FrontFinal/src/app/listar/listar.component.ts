@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ServiceService } from '../service/service.service';
 import { Obra } from '../models/Obra';
+import swal from 'sweetalert';
+
 @Component({
   selector: 'app-listar',
   templateUrl: './listar.component.html',
@@ -28,7 +30,7 @@ export class ListarComponent implements OnInit {
     this.service.deleteObra(obra)
     .subscribe(data => {
       this.obras = this.obras.filter(p => p !== obra);
-      alert('Obra Eliminada');
+      swal("Exito!", "Obra Eliminada!","success");
     });
   }
 

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h3>Modificar Obra</h3>
+      </div>
+      <div class="card-body">
+        <div>
+          <div class="form-group">
+            <label for="">Titulo</label>
+            <input [(ngModel)]="obra.titulo" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Estilo</label>
+            <input [(ngModel)]="obra.estilo" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Precio</label>
+            <input [(ngModel)]="obra.precio" type="number" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Propietario</label>
+            <input [(ngModel)]="obra.idPropietario" type="number" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Artista</label>
+            <input [(ngModel)]="obra.idArtista" type="number" class="form-control">
+          </div>
+          <button (click)="Actualizar(obra)" class="btn btn-danger">Modificar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

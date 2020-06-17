@@ -19,4 +19,9 @@ export class ListarComponent implements OnInit {
     });
   }
 
+  Editar(obra: Obra): void{
+    localStorage.setItem('id', obra.idObra.toString());
+    this.router.navigate(['edit']);
+  }
+
 }

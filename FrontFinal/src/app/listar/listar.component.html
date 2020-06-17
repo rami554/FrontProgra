@@ -2,7 +2,6 @@
 <table class="table">
     <thead class="thead-dark">
       <tr>
-        <th scope="col">#</th>
         <th scope="col">Titulo</th>
         <th scope="col">Estilo</th>
         <th scope="col">Precio</th>
@@ -12,12 +11,15 @@
     </thead>
     <tbody>
       <tr *ngFor="let obra of obras">
-        <td>{{obra.idObra}}</td>
         <td>{{obra.titulo}}</td>
         <td>{{obra.estilo}}</td>
         <td>{{obra.precio}}</td>
         <td>{{obra.idPropietario}}</td>
         <td>{{obra.idArtista}}</td>
+        <td>
+          <button (click)="Editar(obra)" class="btn btn-warning">editar</button>
+          <button class="btn btn-danger" style="margin-left: 10px;">Borrar</button>
+        </td>
       </tr>
     </tbody>
   </table>

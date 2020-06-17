@@ -10,27 +10,26 @@ import { AdicionarComponent } from './adicionar/adicionar.component';
 import { FormsModule } from '@angular/forms';
 import { ServiceService } from '../app/service/service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ListarPersonaComponent } from './listar-persona/listar-persona.component';
 import { ListarExpocicionesComponent } from './listar-expociciones/listar-expociciones.component';
 import { ListarVentaComponent } from './listar-venta/listar-venta.component';
+import { EditComponent } from './edit/edit.component';
 
 const routes: Route[] = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'adicionar', component: AdicionarComponent},
   {path: 'listar', component: ListarComponent},
-  {path: 'listar-persona', component: ListarPersonaComponent}
-  
-]
+  {path: 'edit', component: EditComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ListarComponent,
     AdicionarComponent,
-    ListarPersonaComponent,
     ListarExpocicionesComponent,
-    ListarVentaComponent
+    ListarVentaComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

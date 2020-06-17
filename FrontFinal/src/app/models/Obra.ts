@@ -4,5 +4,5 @@ export class Obra {
     estilo: string;
     precio: DoubleRange;
     idPropietario: number;
-    idArtista: number;
+    idArtista: Date;
 }

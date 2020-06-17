@@ -10,8 +10,6 @@ import { AdicionarComponent } from './adicionar/adicionar.component';
 import { FormsModule } from '@angular/forms';
 import { ServiceService } from '../app/service/service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { ListarExpocicionesComponent } from './listar-expociciones/listar-expociciones.component';
-import { ListarVentaComponent } from './listar-venta/listar-venta.component';
 import { EditComponent } from './edit/edit.component';
 
 const routes: Route[] = [
@@ -27,8 +25,6 @@ const routes: Route[] = [
     HomeComponent,
     ListarComponent,
     AdicionarComponent,
-    ListarExpocicionesComponent,
-    ListarVentaComponent,
     EditComponent
   ],
   imports: [

@@ -27,7 +27,7 @@ export class AdicionarComponent implements OnInit {
   Guardar(){
     this.service.createObras(this.obra).subscribe((data) => {
       alert('Obra Registrada');
-      console.log(data);
+      this.router.navigate(['home']);
     }, (error) => {
       console.log(error);
       alert('algo salio mal');

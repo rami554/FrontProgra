@@ -1,9 +1,9 @@
 export class Persona {
-    idPersona: number;
-    String nombre;
-    String apellido;
-    int celular;
-    String pais;
-    String ciudad;
-    String profesion;
+  id_persona: number;
+  nombre: string;
+  apellido: string;
+  celular: number ;
+  pais: string;
+  ciudad: string;
+  profesion: string;
 }

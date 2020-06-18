@@ -1,12 +1,15 @@
 <hr>
+<h1 class="text-light">.</h1>
 <table class="table">
-    <thead class="thead-dark">
+
+    <thead class="thead-dark" >
       <tr>
         <th scope="col">Titulo</th>
         <th scope="col">Estilo</th>
         <th scope="col">Precio</th>
         <th scope="col">Propietario</th>
         <th scope="col">Artista</th>
+        <th scope="col">  Operaciones</th>
       </tr>
     </thead>
     <tbody>
@@ -17,7 +20,7 @@
         <td>{{obra.idPropietario}}</td>
         <td>{{obra.idArtista}}</td>
         <td>
-          <button (click)="Editar(obra)" class="btn btn-warning">editar</button>
+          <button (click)="Editar(obra)" class="btn btn-info " >Editar</button>
           <button (click)="Borrar(obra)" class="btn btn-danger" style="margin-left: 10px;">Borrar</button>
         </td>
       </tr>

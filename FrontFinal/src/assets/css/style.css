@@ -139,6 +139,17 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
+.user_image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1.6rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 2rem auto;
+  object-fit: cover;
+
+}
+
 .nav-menu > ul > li > a:before {
   content: "";
   position: absolute;

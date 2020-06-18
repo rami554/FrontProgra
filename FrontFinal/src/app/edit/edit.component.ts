@@ -30,7 +30,7 @@ export class EditComponent implements OnInit {
     this.service.updateObra(obra)
     .subscribe(data =>{
       this.obra = data;
-     // swal("Exito", "Obra Actualizada","success");
+      swal("Exito", "Obra Actualizada","success");
       this.router.navigate(['listar']);
     })
   }

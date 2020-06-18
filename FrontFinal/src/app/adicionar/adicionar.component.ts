@@ -17,8 +17,8 @@ export class AdicionarComponent implements OnInit {
     estilo: null,
     precio: null,
     idPropietario: null,
-    idArtista: null,
-  }
+    idArtista: null
+  };
 
   constructor(private router: Router, private service: ServiceService) { }
 
@@ -27,11 +27,11 @@ export class AdicionarComponent implements OnInit {
 
   Guardar(){
     this.service.createObras(this.obra).subscribe((data) => {
-      swal("Exito!", "Obra Registrada!","success");
+      swal('Exito!', 'Obra Registrada!', 'success');
       console.log(data);
     }, (error) => {
       console.log(error);
-      swal("Oh Oh!", "Obra NO Registrada!","error");
+      swal('Oh Oh!', 'Obra NO Registrada!', 'error');
     });
   }
 }

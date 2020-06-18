@@ -30,7 +30,7 @@ export class ListarComponent implements OnInit {
     this.service.deleteObra(obra)
     .subscribe(data => {
       this.obras = this.obras.filter(p => p !== obra);
-     // swal("Exito!", "Obra Eliminada!","success");
+      swal("Exito!", "Obra Eliminada!","success");
     });
   }
 

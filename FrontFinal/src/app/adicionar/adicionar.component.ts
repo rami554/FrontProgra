@@ -17,8 +17,8 @@ export class AdicionarComponent implements OnInit {
     estilo: null,
     precio: null,
     idPropietario: null,
-    idArtista: null,
-  }
+    idArtista: null
+  };
 
   constructor(private router: Router, private service: ServiceService) { }
 
